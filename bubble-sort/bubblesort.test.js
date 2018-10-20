@@ -1,5 +1,27 @@
-import bubleSort from "./bublesort";
+import bubbleSort, { bubbleSortWithCustomComparator } from "./bubblesort";
+import {
+    // equalArr,
+    // notSortedArr,
+    // reverseArr,
+    // sortedArr,npm
+    SortTester,
+} from '../SortTester';
 
-test('test sorting', () => {
-    expect(bubleSort([9, 3, 5, 2, 6, 3, 7])).toEqual([2, 3, 3, 5, 6, 7, 9]);
+describe('BubbleSort', () => {
+    it('should sort array', () => {
+        SortTester.testSort(bubbleSort);
+    });
+
+    it('should sort array with custom comparator', () => {
+        SortTester.testSortWithCustomComparator(bubbleSortWithCustomComparator);
+    });
+
+    it('should do stable sorting', () => {
+        SortTester.testSortStability(bubbleSortWithCustomComparator);
+    });
+
+    it('should sort negative numbers', () => {
+        SortTester.testNegativeNumbersSort(bubbleSort);
+    });
+
 });
