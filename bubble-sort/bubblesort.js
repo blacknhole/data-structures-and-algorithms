@@ -1,4 +1,4 @@
-import Comparator from "../Comparator"
+import Comparator from "../Comparator";
 
 export default function bubbleSort (array) {
     const comparator = new Comparator();

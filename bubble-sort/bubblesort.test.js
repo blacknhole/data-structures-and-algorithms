@@ -1,11 +1,5 @@
 import bubbleSort, { bubbleSortWithCustomComparator } from "./bubblesort";
-import {
-    // equalArr,
-    // notSortedArr,
-    // reverseArr,
-    // sortedArr,npm
-    SortTester,
-} from '../SortTester';
+import { SortTester } from '../SortTester';
 
 describe('BubbleSort', () => {
     it('should sort array', () => {
