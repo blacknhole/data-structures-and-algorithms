@@ -16,7 +16,7 @@ export default function bubbleSort (array) {
             }
         }
         len = flag;
-    } while (flag > 0)
+    } while (flag > 0);
     return array;
 };
 
@@ -36,6 +36,6 @@ export function bubbleSortWithCustomComparator (array, compareFunction) {
             }
         }
         len = flag;
-    } while (flag > 0)
+    } while (flag > 0);
     return array;
 };
