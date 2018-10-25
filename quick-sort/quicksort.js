@@ -20,9 +20,11 @@ const partition = (array, p, r, comparator) => {
         }
 
     } while (j < r);
-    temp = array[i];
-    array[i] = array[r];
-    array[r] = temp;
+    if (i < r) {
+        temp = array[i];
+        array[i] = array[r];
+        array[r] = temp;
+    }
     return i;
 };
 

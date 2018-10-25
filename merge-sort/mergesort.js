@@ -18,6 +18,7 @@ const merge = (array, p, q, r, comparator) => {
     }
 
     temp = i > q ? temp.concat(array.slice(j, r + 1)) : temp.concat(array.slice(i, q + 1));
+    // i > q ? temp.push(...array.slice(j, r + 1)) : temp.push(...array.slice(i, q + 1));
 
     array.splice(p, r - p + 1, ...temp);
 };
